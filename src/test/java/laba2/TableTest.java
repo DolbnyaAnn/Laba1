@@ -25,20 +25,22 @@ class TableTest {
     }
 
     @Test
-    void toStringTest()
-    {
-        assertEquals("11\t12\t\n" + "21\t22\t",table.toString());
+    void toStringTest() {
+        assertEquals("11\t12\t\n" + "21\t22\t\n", table.toString());
     }
 
     @Test
-    void colTest()
-    {
-        assertEquals(2,table.col());
+    void colTest() {
+        assertEquals(2, table.col());
     }
 
     @Test
-    void rowTest()
-    {
-        assertEquals(2,table.row());
+    void rowTest() {
+        assertEquals(2, table.row());
+    }
+
+    @Test
+    void avgTest() {
+        assertEquals(16.5, table.average());
     }
 }
