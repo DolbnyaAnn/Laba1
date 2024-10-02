@@ -41,14 +41,14 @@ public class Main {
         oddEvenSeparator.odd();
 
 
-        Table table=new Table(7,7);
+        Table table=new Table(2,2);
         for(int i=0;i<table.row();i++){
             for(int j=0;j<table.col();j++){
                 table.setValue(i,j,(i+1)*10+j+1);
             }
         }
         System.out.println(table);
-        System.out.println(table.getValue(2,3));
+        System.out.println(table.getValue(1,1));
         System.out.println(table.row());
         System.out.println(table.col());
         System.out.println(table.average());
